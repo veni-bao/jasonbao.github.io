@@ -1,0 +1,78 @@
+/*********************************************************************************
+
+    Template Name: Hypno Personal Creative Portfolio HTML5 Template  
+    Description: Hypno is a beautifula and unique multipurpose Bootstrap 4 template.
+    Version: 1.0
+    Note: This is style css.
+
+**********************************************************************************/
+
+
+
+/*===============================================================================
+			[ INDEX ]
+=================================================================================
+	reset
+	typography
+	helper-class
+	button
+	section-title
+	header
+	navigation
+	sidebar-menu
+	slider
+	about
+	banner
+	service
+	portfolio
+	blog
+	portfolio-details
+	blog-details
+	contact
+	footer
+
+
+
+/* Needed Files*/
+@import 'variables';
+@import 'mixins';
+
+
+
+/*******************
+Basic Styles
+********************/
+@import 'basic/reset';
+@import 'basic/typography';
+@import 'basic/helper-class';
+
+
+
+
+/*******************
+Elements Styles
+********************/
+@import 'elements/button';
+@import 'elements/section-title';
+
+
+
+
+/*******************
+Blocks Styles
+********************/
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/sidebar-menu';
+@import 'blocks/slider';
+@import 'blocks/about';
+@import 'blocks/banner';
+@import 'blocks/service';
+@import 'blocks/portfolio';
+@import 'blocks/blog';
+@import 'blocks/portfolio-details';
+@import 'blocks/blog-details';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+

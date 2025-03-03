@@ -1,0 +1,222 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*------------------------
+    Portfolio Details
+-------------------------*/
+
+
+
+
+.portfolio_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .single__pro{
+        &.cus--1 {
+          background: #f9f9f9 none repeat scroll 0 0;
+          flex-basis: 37%;
+        }
+        &.cus--2 {
+            align-self: stretch;
+            background-color: #f9f9f9;
+            background-image: url("images/port-big/3.jpg");
+            display: flex;
+            flex-basis: 62.5%;
+            justify-content: center;
+            position: relative;
+        }
+    }
+}
+
+
+.pro__item--center {
+  align-items: center;
+  display: flex;
+}
+
+.poster__design {
+    align-items: center;
+    display: flex;
+    .design__images{
+        flex-basis: 45%;
+        img {
+            width: 100%;
+        }
+    }
+    .design__inner{
+        flex-basis: 55%;
+        padding: 36px 40px;
+        h2 {
+            color: #333333;
+            font-size: 36px;
+            margin-bottom: 36px;
+            padding-bottom: 19px;
+            position: relative;
+            text-transform: capitalize;
+            &::before {
+                background: #333333 none repeat scroll 0 0;
+                bottom: 0;
+                content: "";
+                height: 1px;
+                position: absolute;
+                width: 100px;
+            }
+        }
+        p{
+            color: #333333;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 42px;
+            padding-right: 10%;
+        }
+        .meta {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            li{
+                color: #888888;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 13px;
+                span{
+                    color: #333333;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+.black__version .portfolio_wrapper .single__pro.cus--2 {
+  background-image: url("images/port-big/5.jpg");
+}
+.black__version .poster__design .design__inner h2,
+.black__version .poster__design .design__inner p ,
+.black__version .poster__design .design__inner .meta li span ,
+.black__version .poster__design .design__inner .meta li {
+  color: #fff;
+}
+
+
+
+
+
+
+/* Responsive Css*/
+
+
+@media #{$xlg-layout}{
+    
+
+
+}
+
+
+@media #{$lg-layout}{
+    
+    .portfolio_wrapper .single__pro.cus--1 {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+    .portfolio_wrapper .single__pro.cus--2 {
+      flex-basis: 100%;
+      justify-content: inherit;
+    }
+    .poster__design {
+      flex-wrap: wrap;
+    }
+    .poster__design .design__inner {
+      flex-basis: 100%;
+      padding: 36px 7px 36px 40px;
+    }
+    .poster__design .design__images {
+      flex-basis: 100%;
+    }
+
+
+
+
+}
+@media #{$md-layout}{
+    
+    .portfolio_wrapper .single__pro.cus--1 {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+    .portfolio_wrapper .single__pro.cus--2 {
+      flex-basis: 100%;
+      justify-content: inherit;
+    }
+    .poster__design {
+      flex-wrap: wrap;
+    }
+    .poster__design .design__inner {
+      flex-basis: 100%;
+      padding: 36px 7px 36px 40px;
+    }
+    .poster__design .design__images {
+      flex-basis: 100%;
+    }
+
+    .portfolio_wrapper .single__pro.cus--1 img ,
+    .portfolio_wrapper .single__pro.cus--2 .pro__item--center img {
+      width: 100%;
+    }
+    .pro__item--center {
+      flex-basis: 100%;
+    }
+
+
+
+}
+
+@media #{$sm-layout}{
+    
+
+    .portfolio_wrapper .single__pro.cus--1 {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+    .portfolio_wrapper .single__pro.cus--2 {
+      flex-basis: 100%;
+      justify-content: inherit;
+    }
+    .poster__design {
+      flex-wrap: wrap;
+    }
+    .poster__design .design__inner {
+      flex-basis: 100%;
+      padding: 36px 7px 36px 40px;
+    }
+    .poster__design .design__images {
+      flex-basis: 100%;
+    }
+
+    .portfolio_wrapper .single__pro.cus--1 img ,
+    .portfolio_wrapper .single__pro.cus--2 .pro__item--center img {
+      width: 100%;
+    }
+    .pro__item--center {
+      flex-basis: 100%;
+    }
+
+
+
+    
+
+
+}
+
+@media #{$xs-layout}{
+    
+
+
+}
+
+
+
+
+

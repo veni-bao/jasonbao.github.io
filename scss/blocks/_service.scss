@@ -1,0 +1,182 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*-----------------
+    Service Styles
+-----------------*/
+
+
+.progress {
+  background-color: #999999;
+  border-radius: 0;
+  display: flex;
+  height: 5px;
+  margin-bottom: 9px;
+  margin-top: 9px;
+  overflow: visible;
+}
+.progress-bar::after {
+  background: #fe4274 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 17px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 17px;
+}
+.progress-bar {
+  background-color: #c16d83;
+  position: relative;
+}
+.hpy__progress {
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.hp__service__area {
+    padding: 150px 250px;
+}
+
+.service {
+    display: flex;
+    .service__icon {
+        margin-right: 12px;
+        width: 40px;
+    }
+    .service__inner{
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 23px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+            padding-right: 15%;
+        }
+    }
+}
+
+.black__version .service .service__inner h2 ,
+.black__version .service .service__inner p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.piechart .progressinner {
+  background: #fc7196;
+  border: 0 none;
+}
+.piechart .progressinner .display {
+  background: transparent none repeat scroll 0 0;
+  position: relative;
+}
+
+.piechart .progressinner .lpane .cover, .piechart .progressinner .rpane .cover {
+  background: #fd4e7d;
+}
+
+
+
+.displayprogress {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    left: 26%;
+    position: absolute;
+    top: 38%;
+}
+.displayprogress::after {
+    content: "%";
+    padding-left: 10px;
+    position: absolute;
+}
+.piechart {
+  height: 110px;
+  padding-bottom: inherit;
+  position: relative;
+  width: 110px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Css*/
+
+
+@media #{$xlg-layout}{
+    
+
+
+}
+
+
+@media #{$lg-layout}{
+    
+  .hp__service__area {
+    padding: 150px 14px;
+  }
+
+
+  
+
+}
+@media #{$md-layout}{
+ 
+  .hp__service__area.fullscreen {
+    height: auto;
+  }
+  .hp__service__area {
+    padding: 150px 50px;
+  }
+
+
+
+
+}
+
+@media #{$sm-layout}{
+    
+
+  .hp__service__area.fullscreen {
+    min-height: auto;
+  }
+  .hp__service__area {
+    padding: 150px 20px;
+  }
+
+  
+
+
+
+
+}
+
+@media #{$xlg-layout}{
+    
+    .hp__service__area {
+      padding: 150px 100px;
+    }
+
+}
+
+@media #{$xs-layout}{
+    
+
+
+}
